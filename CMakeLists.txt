@@ -25,12 +25,14 @@ endif()
 
 find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/StartExploration.srv"
   "msg/CasualtyDetect.msg"
   "msg/MapExplored.msg"
-  DEPENDENCIES std_msgs
+  "msg/ArrayCasualtyPos.msg"
+  DEPENDENCIES std_msgs geometry_msgs
 )
 
 ament_package()
