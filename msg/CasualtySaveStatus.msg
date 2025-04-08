@@ -1,0 +1,1 @@
+bool all_casualties_saved
