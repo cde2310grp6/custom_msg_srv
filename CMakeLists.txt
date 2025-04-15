@@ -33,6 +33,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MapExplored.msg"
   "msg/ArrayCasualtyPos.msg"
   "msg/CasualtySaveStatus.msg"
+  "msg/IrRaw.msg"
   DEPENDENCIES std_msgs geometry_msgs
 )
 
